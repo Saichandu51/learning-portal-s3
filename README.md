@@ -47,12 +47,11 @@ This project is a simple **Learning Hub** web portal that provides curated cours
 
 ## 📸 Screenshot
 
-*(Optional: You can add a screenshot of your web page here)*
 
 ---
 
 ## 🧑‍💻 Author
 
-**Anukool S.**  
-GitHub: [your-username](https://github.com/your-username)
+**Saichandu Anukonti.**  
+GitHub: [Saichandu51](https://github.com/Saichandu51)
 
