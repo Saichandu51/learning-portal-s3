@@ -26,7 +26,7 @@ This project is a simple **Learning Hub** web portal that provides curated cours
 4. Set bucket policy to allow public read access
 5. Configured **index document** as `web.html`
 6. Verified website at `http://<bucket-name>.s3-website-<region>.amazonaws.com/`
-7. Website link `https://learning-portal51.s3.ap-south-1.amazonaws.com/web.html`
+7. [Website link](https://learning-portal51.s3.ap-south-1.amazonaws.com/web.html)
 
 ---
 
