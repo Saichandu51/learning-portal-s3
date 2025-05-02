@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Navigation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #abeac6; /* White background */
+            color: #333333;
+            text-align: center;
+            padding: 20px;
+        }
+        .nav-button {
+            background-color: #f2acac; /* Classic Blue */
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            cursor: pointer;
+            width: 80%;
+            border-radius: 5px;
+            margin: 10px auto;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            display: block;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .sub-menu {
+            display: none;
+            background: #F0F0F0; /* Light Gray */
+            color: #000080; /* Navy Blue */
+            width: 75%;
+            margin: auto;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .sub-menu a {
+            display: block;
+            padding: 5px 0;
+            text-decoration: none;
+            color: #0A74DA; /* Classic Blue */
+            font-weight: bold;
+        }
+        .sub-menu a:hover {
+            text-decoration: underline;
+            color: #000000; /* Navy Blue */
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: #6a6af1;">Online Learning Hub</h1>
+    
+    <button class="nav-button" onclick="toggleMenu('cse')">Computer Science Engineering</button>
+    <div id="cse" class="sub-menu">
+        <a href="#" onclick="toggleMenu('cse-sub')">CSE Courses</a>
+        <div id="cse-sub" class="sub-menu">
+            <a href="https://www.udemy.com/course/python-for-beginners/">Python</a>
+            <a href="https://www.udemy.com/course/java-programming-tutorial-for-beginners/">Java</a>
+            <a href="https://www.coursera.org/specializations/c-programming">C</a>
+            <a href="https://www.udacity.com/course/c-plus-plus-nanodegree--nd213">C++</a>
+            <a href="https://www.codecademy.com/learn/learn-c-sharp">C#</a>
+            <a href="https://www.udacity.com/course/intro-to-operating-systems--ud923">Operating Systems</a>
+        </div>
+        <a href="#" onclick="toggleMenu('csm-sub')">CSM Courses</a>
+        <div id="csm-sub" class="sub-menu">
+            <a href="https://www.coursera.org/learn/machine-learning">Machine Learning</a>
+            <a href="https://www.udemy.com/course/deep-learning-az/">Deep Learning</a>
+            <a href="https://www.udemy.com/course/natural-language-processing/">NLP</a>
+        </div>
+        <a href="#" onclick="toggleMenu('csd-sub')">CSD Courses</a>
+        <div id="csd-sub" class="sub-menu">
+            <a href="https://www.udemy.com/course/data-science-and-machine-learning-bootcamp-with-r/">Data Science Bootcamp</a>
+            <a href="https://www.coursera.org/specializations/data-science-python">Python for Data Science</a>
+        </div>
+        <a href="#" onclick="toggleMenu('web-dev')">Web Development</a>
+        <div id="web-dev" class="sub-menu">
+            <a href="https://www.w3schools.com/html/">HTML5</a>
+            <a href="https://www.w3schools.com/css/">CSS</a>
+            <a href="https://www.w3schools.com/js/">JavaScript</a>
+            <a href="https://react.dev/">ReactJS</a>
+        </div>
+    </div>
+    <button class="nav-button" onclick="toggleMenu('ece')">Electronics & Communication Engineering</button>
+    <div id="ece" class="sub-menu">
+        <a href="https://www.udemy.com/course/vlsi-design/">VLSI</a>
+        <a href="https://www.coursera.org/specializations/iot">Embedded Systems</a>
+        <a href="https://www.udemy.com/course/digital-signal-processing/">Digital Processing System</a>
+        <a href="https://www.udemy.com/course/microprocessors/">Microprocessing</a>
+    </div>
+    
+    <button class="nav-button" onclick="toggleMenu('eee')">Electrical & Electronics Engineering</button>
+    <div id="eee" class="sub-menu">
+        <a href="https://www.udemy.com/course/electrical-power-systems/">Power Systems</a>
+        <a href="https://www.udemy.com/course/electric-machines/">Electrical Machines</a>
+        <a href="https://www.udemy.com/course/electronic-circuits-for-beginners/">Electronic Circuits</a>
+    </div>
+    
+    <button class="nav-button" onclick="toggleMenu('graphic')">Graphic Designing</button>
+    <div id="graphic" class="sub-menu">
+        <a href="https://www.udemy.com/course/adobe-photoshop-course/">Adobe Photoshop</a>
+        <a href="https://www.udemy.com/course/adobe-illustrator-course/">Adobe Illustrator</a>
+        <a href="https://www.udemy.com/course/ux-ui-design/">UX/UI Design</a>
+    </div>
+    
+    <script>
+        function toggleMenu(menuId) {
+            var menu = document.getElementById(menuId);
+            if (menu.style.display === "none" || menu.style.display === "") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
