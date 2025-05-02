@@ -47,7 +47,9 @@ This project is a simple **Learning Hub** web portal that provides curated cours
 
 ## 📸 Screenshot
 
-
+C:\Users\anuko\OneDrive\Pictures\Screenshots
+C:\Users\anuko\OneDrive\Pictures\Screenshots
+C:\Users\anuko\OneDrive\Pictures\Screenshots
 ---
 
 ## 🧑‍💻 Author
