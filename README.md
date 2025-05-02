@@ -39,18 +39,13 @@ This project is a simple **Learning Hub** web portal that provides curated cours
 ## 📦 Technologies Used
 
 - **HTML**
+- **CSS**
 - **Amazon S3**
 - **IAM**
 - **Git & GitHub**
 
 ---
 
-## 📸 Screenshot
-
-C:\Users\anuko\OneDrive\Pictures\Screenshots
-C:\Users\anuko\OneDrive\Pictures\Screenshots
-C:\Users\anuko\OneDrive\Pictures\Screenshots
----
 
 ## 🧑‍💻 Author
 
