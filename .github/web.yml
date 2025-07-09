@@ -1,0 +1,22 @@
+name: Deploy HTML Only
+
+on:
+  push:
+    branches: [ "main" ]
+    paths: [ "web.html" ]  # Trigger only when web.html changes
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout the repo (only web.html exists)
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .  # Deploys the root dir (where web.html lives)
